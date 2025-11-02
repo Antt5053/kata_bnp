@@ -1,0 +1,11 @@
+{
+  "firstname": "w",
+  "lastname": "D",
+  "totalprice": 12302,
+  "depositpaid": false,
+  "bookingdates": {
+    "checkin": "2020-01-01",
+    "checkout": "2021-01-01"
+  },
+  "additionalneeds": "tarte"
+}
