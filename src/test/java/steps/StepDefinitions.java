@@ -58,6 +58,7 @@ public class StepDefinitions {
     public void theBookingShouldNoLongerExist() {
         response = APIUtils.getRequest("/booking/"+TestContext.getBookingId());
         response.then().statusCode(404);
+        TestContext.deleteBookingId();
     }
 
     @When("I retrieve the booking by ID")
@@ -68,6 +69,7 @@ public class StepDefinitions {
     @Then("the booking details should match the created data")
     public void theBookingDetailsShouldMatchTheCreatedData() {
         JSONObject sent = new JSONObject(ReadJSON.readJsonFromFile("createBooking.json"));
+        System.out.println(response.getBody().asString());
         JSONObject received = new JSONObject(response.getBody().asString());
         if(received.has("bookingid")) {
             received = received.getJSONObject("booking");
