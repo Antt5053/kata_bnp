@@ -11,5 +11,6 @@ import io.cucumber.junit.CucumberOptions;
         plugin = {"pretty", "html:target/cucumber-report.html"},
         monochrome = true
 )
+
 public class Regression {
 }

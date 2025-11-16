@@ -1,4 +1,3 @@
-@security
 Feature: Auth token flow
 
   Scenario: Generate a token

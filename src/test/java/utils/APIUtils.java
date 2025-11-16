@@ -1,10 +1,8 @@
 package utils;
 
 import io.restassured.response.Response;
-import utils.TokenManager;
 
 import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.*;
 
 public class APIUtils {
 
